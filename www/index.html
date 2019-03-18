@@ -5,15 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
   <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-  This is a template for Onsen UI app.
+  <!--Corpo do aplicativo-->
+  <div class="container">
+
+    <!--Título do app-->
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center mt-3">Cálculo de metabolismo basal</h3>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+        
+        <!--Formulario de preenchimento-->
+        <div class="form-group text-center">
+          
+          <div class="input-group mb-3">
+
+            <div class="input-group-prepend">
+              <span class="input-group-text">Altura</span>
+            </div>
+            <input type="number" step="any" id="altura" class="form-control" aria-label="Small" id="altura" placeholder="Digite sua altura">
+
+          </div>
+
+          <div class="input-group mb-3">
+
+            <div class="input-group-prepend">
+              <span class="input-group-text">Peso</span>
+            </div>
+            <input type="number" step="any" id="peso" class="form-control" placeholder="Digite seu peso" aria-label="Small">
+          </div>
+
+          <div class="input-group mb-3">
+
+            <div class="input-group-prepend">
+              <span class="input-group-text">Idade</span>
+            </div>
+            <input type="number" step="any" id="idade" class="form-control" placeholder="Digite sua idade" aria-label="Small">
+          </div>
+
+          <div class="input-group mb-3">
+
+            <div class="input-group-prepend">
+              <span class="input-group-text">Sexo</span>
+            </div>
+            <select id="sexo" class="form-control">
+              <option value="">Selecione</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+          </div>
+
+          <input type="button" class="btn btn-success pl-3 pr-3" value="Calcular">
+
+          <input type="textfield" class="form-control mt-3" id="resultado" placeholder="Resultado" readonly>
+        </div>
+        <!--Fim do formulario-->
+
+      </div>
+    </div>
+
+  </div>
+  <!--Fim do corpo-->
 </body>
 </html>
