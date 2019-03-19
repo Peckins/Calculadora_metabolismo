@@ -29,47 +29,35 @@
         
         <!--Formulario de preenchimento-->
         <div class="form-group text-center">
+
+          <label>Altura:</label>          
+          <input type="number" step="any" id="altura" class="form-control" aria-label="Small" id="altura" placeholder="Digite sua altura">
+
+          <br>
+
+          <label>Peso:</label>
+          <input type="number" step="any" id="peso" class="form-control" placeholder="Digite seu peso" aria-label="Small">
+
+          <br>
+
+          <label>Idade:</label>
+          <input type="number" step="any" id="idade" class="form-control" placeholder="Digite sua idade">
+
+          <br>
           
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text">Altura</span>
-            </div>
-            <input type="number" step="any" id="altura" class="form-control" aria-label="Small" id="altura" placeholder="Digite sua altura">
-
-          </div>
-
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text">Peso</span>
-            </div>
-            <input type="number" step="any" id="peso" class="form-control" placeholder="Digite seu peso" aria-label="Small">
-          </div>
-
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text">Idade</span>
-            </div>
-            <input type="number" step="any" id="idade" class="form-control" placeholder="Digite sua idade" aria-label="Small">
-          </div>
-
-          <div class="input-group mb-3">
-
-            <div class="input-group-prepend">
-              <span class="input-group-text">Sexo</span>
-            </div>
-            <select id="sexo" class="form-control">
-              <option value="">Selecione</option>
+          <label>Sexo:</label>
+          <select id="sexo" class="form-control">
+              <option value="" selected>Selecione</option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
-            </select>
-          </div>
+           </select>
 
-          <input type="button" class="btn btn-success pl-3 pr-3" value="Calcular">
+          <br>
 
-          <input type="textfield" class="form-control mt-3" id="resultado" placeholder="Resultado" readonly>
+          <input type="button" class="btn btn-success" value="Calcular">
+
+          <input type="textfield" class="form-control" id="resultado" placeholder="Resultado" readonly>
+          
         </div>
         <!--Fim do formulario-->
 
