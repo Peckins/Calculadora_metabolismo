@@ -55,7 +55,18 @@
 
           <br>
 
-          <input type="button" class="btn btn-success" value="Calcular">
+          <label>Taxa de atividade:</label>
+          <select id="atividade" class="form-control">
+              <option value="" selected>Selecione</option>
+              <option value="1,2">Sedentário</option>
+              <option value="1.375">Levemente ativo</option>
+              <option value="1.55">Moderadamente ativo</option>
+              <option value="1.725">Altamente ativo</option>
+              <option value="1.9">Extremamente ativo</option>
+           </select>
+
+          <input type="button" class="btn btn-success" value="Calcular" id="calcular">
+          <input type="button" class="btn btn-danger" value="Limpar" id="clear">
 
           <input type="textfield" class="form-control" id="resultado" placeholder="Resultado" readonly>
           
